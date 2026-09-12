@@ -44,7 +44,7 @@ samples = samples
     "Explore Payloader Tech website samples for landscaping, hospitality, and restaurant businesses, each with a distinct brand system and interactive customer journey.",
     "Explore Payloader Tech website samples for ecommerce, landscaping, hospitality, and restaurant businesses, each with a distinct brand system and interactive customer journey."
   )
-  .replace("samples-v3.css?v=three-live-samples-1", "samples-v3.css?v=four-live-samples-2")
+  .replace("samples-v3.css?v=three-live-samples-1", "samples-v3.css?v=four-live-samples-3")
   .replace("Three live sample websites", "Four live sample websites")
   .replace("Three worlds. <em>Each built to be explored.</em>", "Four worlds. <em>Each built to be explored.</em>")
   .replace(
@@ -95,6 +95,10 @@ samples = replaceOnce(samples, oldHeroCards, newHeroCards, "samples hero cards")
 samples = samples.replace(
   '          <div class="samples-hero-collection samples-reveal" aria-label="Available sample websites">',
   '          <div class="samples-hero-mobile-guide" aria-hidden="true"><span>Swipe through all four</span><i></i><b>→</b></div>\n          <div class="samples-hero-collection samples-reveal" aria-label="Available sample websites">'
+);
+samples = samples.replaceAll(
+  "> Live functional demo</span>",
+  "> Live functional demo · Desktop only</span>"
 );
 
 const collectionNeedle = `          <div class="sample-collection-grid">
@@ -319,6 +323,17 @@ css += `
 @media (max-width: 430px) {
   .samples-hero-collection .samples-hero-card { flex-basis: calc(100vw - 56px); }
   .samples-hero-collection .samples-hero-card > img { height: 210px; }
+}
+
+/* The embedded functional simulator is a desktop-only capability. Mobile and
+   tablet visitors keep the lightweight case study and direct website links. */
+@media (max-width: 1023px) {
+  .sample-status,
+  .sample-preview,
+  .sample-preview-desktop,
+  .sample-mobile-card {
+    display: none !important;
+  }
 }
 `;
 

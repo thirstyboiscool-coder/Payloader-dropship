@@ -44,7 +44,7 @@ samples = samples
     "Explore Payloader Tech website samples for landscaping, hospitality, and restaurant businesses, each with a distinct brand system and interactive customer journey.",
     "Explore Payloader Tech website samples for ecommerce, landscaping, hospitality, and restaurant businesses, each with a distinct brand system and interactive customer journey."
   )
-  .replace("samples-v3.css?v=three-live-samples-1", "samples-v3.css?v=four-live-samples-1")
+  .replace("samples-v3.css?v=three-live-samples-1", "samples-v3.css?v=four-live-samples-2")
   .replace("Three live sample websites", "Four live sample websites")
   .replace("Three worlds. <em>Each built to be explored.</em>", "Four worlds. <em>Each built to be explored.</em>")
   .replace(
@@ -85,8 +85,17 @@ const newHeroCards = `            <a class="samples-hero-card samples-hero-card-
               <div class="samples-hero-card-bar"><i></i><i></i><i></i><small>hotel.payloadertech.com</small></div>
               <img src="/assets/sample-northstar-house.jpg" alt="Northstar House fictional hotel website homepage" />
               <div class="samples-hero-card-label"><span>02</span><strong>Northstar House</strong><small>Design hotel</small></div>
+            </a>
+            <a class="samples-hero-card samples-hero-card-quaternary" href="#payloader-eats" aria-label="Explore the Payloader Eats sample">
+              <div class="samples-hero-card-bar"><i></i><i></i><i></i><small>grill.payloadertech.com</small></div>
+              <img src="/assets/sample-payloader-eats.jpg" alt="Payloader Eats racing bar and grill website homepage" />
+              <div class="samples-hero-card-label"><span>01</span><strong>Payloader Eats</strong><small>Racing Bar &amp; Grill</small></div>
             </a>`;
 samples = replaceOnce(samples, oldHeroCards, newHeroCards, "samples hero cards");
+samples = samples.replace(
+  '          <div class="samples-hero-collection samples-reveal" aria-label="Available sample websites">',
+  '          <div class="samples-hero-mobile-guide" aria-hidden="true"><span>Swipe through all four</span><i></i><b>→</b></div>\n          <div class="samples-hero-collection samples-reveal" aria-label="Available sample websites">'
+);
 
 const collectionNeedle = `          <div class="sample-collection-grid">
             <article class="sample-collection-card sample-collection-earthworks samples-reveal">`;
@@ -226,6 +235,90 @@ css += `
 .sample-brand-contrast a:nth-child(4) {
   border-color: rgba(235, 40, 48, 0.2);
   background: linear-gradient(150deg, rgba(214, 29, 39, 0.13), #0d0b0d);
+}
+
+/* Mobile sample rail: replace the layered desktop collage with a compact,
+   touch-native carousel that keeps every live concept within one swipe. */
+.samples-hero-mobile-guide,
+.samples-hero-collection .samples-hero-card-quaternary {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .samples-hero-mobile-guide {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 0 -2px;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+  .samples-hero-mobile-guide i {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, rgba(200, 255, 47, 0.55), transparent);
+  }
+  .samples-hero-mobile-guide b { color: #c8ff2f; font-size: 1rem; }
+  .samples-hero-collection {
+    width: calc(100% + 20px);
+    max-width: none;
+    min-height: 0;
+    margin-right: -20px;
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 4px 42px 20px 0;
+    scroll-padding-inline: 0 42px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .samples-hero-collection::-webkit-scrollbar { display: none; }
+  .samples-hero-collection .samples-hero-card {
+    position: relative;
+    inset: auto;
+    display: block;
+    flex: 0 0 min(82vw, 350px);
+    width: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.42);
+  }
+  .samples-hero-collection .samples-hero-card-quaternary { display: block; }
+  .samples-hero-collection .samples-hero-card > img,
+  .samples-hero-card-primary > img,
+  .samples-hero-card-secondary > img,
+  .samples-hero-card-tertiary > img,
+  .samples-hero-card-quaternary > img {
+    height: 226px;
+    object-position: top center;
+  }
+  .samples-hero-collection .samples-hero-card-label {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    grid-template-columns: 34px 1fr;
+    padding: 11px 12px;
+    background: rgba(6, 6, 8, 0.91);
+    backdrop-filter: blur(12px);
+  }
+  .samples-hero-collection .samples-hero-card-label small {
+    grid-column: 2;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 430px) {
+  .samples-hero-collection .samples-hero-card { flex-basis: calc(100vw - 56px); }
+  .samples-hero-collection .samples-hero-card > img { height: 210px; }
 }
 `;
 

@@ -1,0 +1,9 @@
+{
+  "name": "Flux Supply — Payloader Tech sample",
+  "short_name": "Flux Supply",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0c0c",
+  "theme_color": "#0b0c0c",
+  "icons": []
+}

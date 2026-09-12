@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0c">
+  <meta name="description" content="Flux Supply is a fictional everyday-carry storefront created by Payloader Tech to demonstrate a polished, interactive ecommerce experience.">
+  <meta property="og:title" content="Flux Supply | Carry less. Move better.">
+  <meta property="og:description" content="A fictional, fully interactive ecommerce concept by Payloader Tech.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dropship.payloadertech.com/">
+  <meta property="og:image" content="https://dropship.payloadertech.com/assets/hero-system.webp">
+  <link rel="canonical" href="https://dropship.payloadertech.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/hero-system.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Flux Supply | Carry less. Move better.</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to products</a>
+
+  <div class="sample-bar">
+    <a href="https://payloadertech.com/samples" rel="noopener">
+      <span class="sample-pulse" aria-hidden="true"></span>
+      A <strong>Payloader Tech</strong> sample website
+      <span aria-hidden="true">↗</span>
+    </a>
+    <span>Fictional brand · Demo checkout · No payments</span>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Flux Supply home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span>FLUX/SUPPLY</span>
+    </a>
+
+    <button class="icon-button menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Open menu</span>
+      <span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#shop">Shop</a>
+      <a href="#system">The system</a>
+      <a href="#bundle">Build a kit</a>
+      <a href="#field-notes">Field notes</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button search-trigger" type="button" aria-label="Search products">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+      </button>
+      <button class="cart-trigger" type="button" aria-controls="cart-drawer" aria-expanded="false">
+        <span>Bag</span>
+        <span class="cart-count" aria-label="0 items in bag">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="assets/hero-system.webp" alt="A precise arrangement of matte black everyday carry tools on dark stone" width="1680" height="936" fetchpriority="high">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span>Edition 01</span> Everyday systems</p>
+        <h1 id="hero-title">Carry less.<br>Move better.</h1>
+        <p>Compact tools for the space between your desk, your bag, and everywhere you need to be next.</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="#shop">Shop the edit <span>↓</span></a>
+          <a class="button button-ghost" href="#bundle">Build your carry <span>→</span></a>
+        </div>
+      </div>
+      <div class="hero-meta" aria-label="Collection details">
+        <div><span>06</span> Objects</div>
+        <div><span>24 MO</span> Warranty concept</div>
+        <div><span>85+</span> Free demo shipping</div>
+      </div>
+      <a class="hero-scroll" href="#shop"><span>Scroll to explore</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="trust-strip" aria-label="Store benefits">
+      <div><span>01</span><p><strong>Curated, not crowded</strong>Six useful pieces. Zero filler.</p></div>
+      <div><span>02</span><p><strong>Built for repeat use</strong>Materials chosen for daily friction.</p></div>
+      <div><span>03</span><p><strong>One connected system</strong>Every object fits the same rhythm.</p></div>
+    </section>
+
+    <section class="section products-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">The core collection</p>
+          <h2 id="shop-title">Your daily loadout,<br>refined.</h2>
+        </div>
+        <p>Objects that earn their space. Pick a category, inspect the details, and build a fictional order.</p>
+      </div>
+
+      <div class="collection-tools reveal">
+        <div class="filter-group" role="group" aria-label="Filter products">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All <span>06</span></button>
+          <button class="filter" type="button" data-filter="power" aria-pressed="false">Power <span>02</span></button>
+          <button class="filter" type="button" data-filter="carry" aria-pressed="false">Carry <span>03</span></button>
+          <button class="filter" type="button" data-filter="desk" aria-pressed="false">Desk <span>01</span></button>
+        </div>
+        <button class="text-button search-trigger" type="button">Search collection <span>⌕</span></button>
+      </div>
+
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="system-section" id="system" aria-labelledby="system-title">
+      <div class="system-visual reveal" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="system-core">
+          <span>FLUX</span>
+          <small>ONE SYSTEM</small>
+        </div>
+        <span class="node node-a">POWER</span>
+        <span class="node node-b">CARRY</span>
+        <span class="node node-c">DESK</span>
+      </div>
+      <div class="system-copy reveal">
+        <p class="eyebrow">Designed as a system</p>
+        <h2 id="system-title">Fewer objects.<br>Better objects.</h2>
+        <p class="lede">Most everyday carry becomes a drawer of near-duplicates. Flux starts with a constraint: each piece has one clear job and works naturally beside the rest.</p>
+        <ol class="principle-list">
+          <li><span>01</span><div><strong>Useful by default</strong><p>No app required. No novelty features. It works when you reach for it.</p></div></li>
+          <li><span>02</span><div><strong>Quiet in the room</strong><p>Graphite finishes and low-profile forms stay out of the way.</p></div></li>
+          <li><span>03</span><div><strong>Ready for motion</strong><p>Small enough for the daily bag. Durable enough to live there.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section bundle-section" id="bundle" aria-labelledby="bundle-title">
+      <div class="bundle-heading reveal">
+        <p class="eyebrow">Kit builder · Save 12%</p>
+        <h2 id="bundle-title">Three pieces.<br>One cleaner carry.</h2>
+        <p>Choose any three products. We’ll assemble your demo kit and show the fictional bundle price in real time.</p>
+      </div>
+      <div class="bundle-layout reveal">
+        <div class="bundle-options" id="bundle-options"></div>
+        <aside class="bundle-summary">
+          <div class="bundle-slots" aria-label="Selected bundle items">
+            <div data-slot="0"><span>01</span><p>Choose an object</p></div>
+            <div data-slot="1"><span>02</span><p>Choose an object</p></div>
+            <div data-slot="2"><span>03</span><p>Choose an object</p></div>
+          </div>
+          <div class="bundle-total">
+            <div><span>Kit total</span><strong id="bundle-total">$0.00</strong></div>
+            <small id="bundle-savings">Select 3 objects to unlock 12% off.</small>
+          </div>
+          <button class="button button-accent" id="add-bundle" type="button" disabled>Add kit to bag <span>＋</span></button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="dispatch-banner" aria-label="Shipping concept">
+      <div class="dispatch-copy reveal">
+        <p class="eyebrow">Demo dispatch network</p>
+        <h2>From shelf to daily carry in one clean move.</h2>
+        <p>This is a concept storefront, so nothing actually ships. The experience still demonstrates clear delivery messaging, order status, and low-friction support.</p>
+        <a class="button button-light" href="#field-notes">Read the field notes <span>→</span></a>
+      </div>
+      <div class="dispatch-map reveal" aria-hidden="true">
+        <div class="map-grid"></div>
+        <span class="map-point point-one"><i></i>ORD</span>
+        <span class="map-point point-two"><i></i>LAX</span>
+        <span class="map-point point-three"><i></i>JFK</span>
+        <svg viewBox="0 0 640 360" preserveAspectRatio="none"><path d="M102 243 C210 78, 388 266, 534 118"></path></svg>
+        <div class="map-status"><span>DEMO ROUTE</span><strong>3 nodes online</strong></div>
+      </div>
+    </section>
+
+    <section class="section notes-section" id="field-notes" aria-labelledby="notes-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">Field notes</p><h2 id="notes-title">Better carry starts<br>with better habits.</h2></div>
+        <p>Short practical reads from a fictional product team obsessed with removing friction.</p>
+      </div>
+      <div class="notes-grid">
+        <article class="note-card reveal">
+          <div class="note-index">FIELD / 001</div>
+          <div class="note-art note-art-one" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p>04 MIN READ</p><h3>The one-bag audit: what actually deserves a pocket?</h3>
+          <button class="text-button note-trigger" type="button" data-note="audit">Read note <span>→</span></button>
+        </article>
+        <article class="note-card reveal">
+          <div class="note-index">FIELD / 002</div>
+          <div class="note-art note-art-two" aria-hidden="true"><i></i><i></i></div>
+          <p>03 MIN READ</p><h3>A simple charging system for every room you work in.</h3>
+          <button class="text-button note-trigger" type="button" data-note="charge">Read note <span>→</span></button>
+        </article>
+        <article class="note-card reveal">
+          <div class="note-index">FIELD / 003</div>
+          <div class="note-art note-art-three" aria-hidden="true"><b></b></div>
+          <p>05 MIN READ</p><h3>Why quiet objects make better long-term companions.</h3>
+          <button class="text-button note-trigger" type="button" data-note="quiet">Read note <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-copy reveal">
+        <p class="eyebrow">Signal, not noise</p>
+        <h2>One useful note.<br>Every other Friday.</h2>
+      </div>
+      <form class="newsletter-form reveal" id="newsletter-form">
+        <label for="newsletter-email">Email address</label>
+        <div><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button type="submit">Join dispatch <span>→</span></button></div>
+        <p id="newsletter-status">Demo only. Your address stays in this browser and is never sent.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="brand brand-large" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>FLUX/SUPPLY</span></a>
+      <p>Compact systems for work,<br>motion, and the in-between.</p>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+    <div class="footer-grid">
+      <div><h3>Shop</h3><a href="#shop">All objects</a><a href="#bundle">Build a kit</a><button class="search-trigger" type="button">Search</button></div>
+      <div><h3>Explore</h3><a href="#system">The system</a><a href="#field-notes">Field notes</a><button class="cart-trigger" type="button">Demo bag</button></div>
+      <div><h3>Concept</h3><a href="https://payloadertech.com/samples">More samples ↗</a><a href="https://payloadertech.com/contact">Start a project ↗</a><a href="mailto:business@payloadertech.com">Business email ↗</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>Flux Supply is a fictional brand. No products, transactions, reviews, or shipping services are real.</p>
+      <p>Concept and build by <a href="https://payloadertech.com">PAYLOADER TECH ↗</a></p>
+      <p>© <span id="year"></span> Concept demo</p>
+    </div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">Demo order</p><h2 id="cart-title">Your bag <span id="drawer-count">(0)</span></h2></div><button class="icon-button close-cart" type="button" aria-label="Close bag">×</button></div>
+    <div class="shipping-meter"><div><span id="shipping-message">Add $85.00 for free demo shipping</span><strong id="shipping-percent">0%</strong></div><i><span id="shipping-bar"></span></i></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span aria-hidden="true">□</span><h3>Your carry is empty.</h3><p>Add an object or build a three-piece kit.</p><button class="button button-dark close-cart" type="button">Explore collection</button></div>
+    <div class="cart-footer" id="cart-footer" hidden>
+      <div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+      <p>Taxes and fictional shipping calculated in the demo checkout.</p>
+      <button class="button button-accent checkout-trigger" type="button">Continue to demo checkout <span>→</span></button>
+      <small>No payment will be collected.</small>
+    </div>
+  </aside>
+
+  <dialog class="modal product-modal" id="product-modal">
+    <button class="modal-close" type="button" aria-label="Close product details">×</button>
+    <div id="product-modal-content"></div>
+  </dialog>
+
+  <dialog class="modal search-modal" id="search-modal">
+    <div class="search-head"><p class="eyebrow">Find an object</p><button class="modal-close" type="button" aria-label="Close search">×</button></div>
+    <label for="site-search">Search collection</label>
+    <input id="site-search" type="search" placeholder="Try “power” or “wallet”" autocomplete="off">
+    <div class="search-results" id="search-results"></div>
+  </dialog>
+
+  <dialog class="modal checkout-modal" id="checkout-modal">
+    <button class="modal-close" type="button" aria-label="Close checkout">×</button>
+    <div class="checkout-progress"><span class="is-active">1 Information</span><span>2 Review</span><span>3 Complete</span></div>
+    <div id="checkout-content"></div>
+  </dialog>
+
+  <dialog class="modal note-modal" id="note-modal">
+    <button class="modal-close" type="button" aria-label="Close field note">×</button>
+    <article id="note-content"></article>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-hidden="true"></div>
+</body>
+</html>

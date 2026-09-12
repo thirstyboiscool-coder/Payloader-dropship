@@ -1,0 +1,14 @@
+{
+  "name": "flux-supply-sample",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A fictional ecommerce sample website by Payloader Tech.",
+  "scripts": {
+    "serve": "python -m http.server 8765 --bind 127.0.0.1",
+    "check": "node --check script.js",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

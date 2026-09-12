@@ -2,11 +2,11 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const target = process.argv[2];
-if (!target) throw new Error("Usage: node scripts/update-main-samples.cjs <download-directory>");
+if (!target) throw new Error("Usage: node scripts/update-main-samples.cjs <PayLoaderTech-repository>");
 
 const homePath = path.join(target, "index.html");
-const samplesPath = path.join(target, "samples-index.html");
-const cssPath = path.join(target, "samples-v3.css");
+const samplesPath = path.join(target, "samples", "index.html");
+const cssPath = path.join(target, "assets", "samples-v3.css");
 
 let home = fs.readFileSync(homePath, "utf8");
 let samples = fs.readFileSync(samplesPath, "utf8");
@@ -340,6 +340,9 @@ css += `
   }
 }
 `;
+
+home = home.replaceAll("/assets/sample-flux-supply.webp", "/assets/showcase/shop-flux-supply.webp");
+samples = samples.replaceAll("/assets/sample-flux-supply.webp", "/assets/showcase/shop-flux-supply.webp");
 
 fs.writeFileSync(homePath, home);
 fs.writeFileSync(samplesPath, samples);

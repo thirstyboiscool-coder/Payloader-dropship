@@ -5,7 +5,7 @@ module.exports = defineConfig({
   timeout: 30_000,
   fullyParallel: true,
   use: {
-    baseURL: "http://127.0.0.1:8765",
+    baseURL: process.env.PLAYWRIGHT_TEST_BASE_URL || "http://127.0.0.1:8765",
     channel: "chrome",
     viewport: { width: 1440, height: 1000 },
     screenshot: "only-on-failure",

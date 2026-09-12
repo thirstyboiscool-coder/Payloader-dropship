@@ -8,6 +8,11 @@ ErrorDocument 404 /404.html
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
   Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
 
+  # This is a fictional portfolio demo. Keep it usable, but out of search results.
+  <FilesMatch "\.(?:html?|php)$">
+    Header always set X-Robots-Tag "noindex, follow"
+  </FilesMatch>
+
   <FilesMatch "\.(?:css|js|svg|webp)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>

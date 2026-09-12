@@ -18,6 +18,10 @@ function replaceOnce(source, needle, replacement, label) {
 }
 
 home = home
+  .replace(
+    "/assets/landing-interactions-v5.js?v=three-live-samples-1",
+    "/assets/landing-interactions-v5.js?v=showcase-lifecycle-1"
+  )
   .replace("3 websites available now", "4 websites available now")
   .replace("Explore three complete websites in action.", "Explore four complete websites in action.")
   .replace(

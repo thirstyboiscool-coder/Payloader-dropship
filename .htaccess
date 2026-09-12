@@ -3,10 +3,9 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
-  Header always set X-Frame-Options "DENY"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
-  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors https://payloadertech.com; upgrade-insecure-requests"
 
   # This is a fictional portfolio demo. Keep it usable, but out of search results.
   <FilesMatch "\.(?:html?|php)$">

@@ -3,8 +3,19 @@
   "notes": [
     {
       "siteId": "flux-supply",
+      "id": "flux-supply-236887ad06a9",
+      "version": "v3.3",
+      "title": "Chronological Patch Note Versioning",
+      "summary": "Reassigned historical versions from v1.0 in commit-date order, used 0.1 increments for small and medium updates, reserved major jumps for qualifying releases, and documented the rule for future changes.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "236887ad06a9c4f8065479c9e6389316a32b65f3",
+      "tags": "Patch Notes, Versioning",
+      "releasedAt": "2026-09-26T15:52:29-05:00"
+    },
+    {
+      "siteId": "flux-supply",
       "id": "flux-supply-400bf8a6a3c7",
-      "version": "v1.6",
+      "version": "v3.2",
       "title": "Patch notes and release history",
       "summary": "Added a dedicated website updates page, a site-specific release feed, and five verified historical updates with links to their GitHub commits.",
       "authorName": "Engineering Team",
@@ -15,7 +26,7 @@
     {
       "siteId": "flux-supply",
       "id": "flux-supply-63385f6730a2",
-      "version": "v1.5",
+      "version": "v3.1",
       "title": "Anonymous viewer analytics",
       "summary": "Added anonymous page view reporting to Payloader Operations for this sample.",
       "authorName": "Engineering Team",
@@ -26,7 +37,7 @@
     {
       "siteId": "flux-supply",
       "id": "flux-supply-4f461880b5b4",
-      "version": "v1.4",
+      "version": "v3.0",
       "title": "Secure portfolio embedding",
       "summary": "Allowed the main Payloader Tech portfolio to embed this storefront sample securely.",
       "authorName": "Engineering Team",
@@ -37,7 +48,7 @@
     {
       "siteId": "flux-supply",
       "id": "flux-supply-b20aac35bcab",
-      "version": "v1.3",
+      "version": "v2.0",
       "title": "Reusable sample integration",
       "summary": "Made the main site sample integration reusable for future showcases.",
       "authorName": "Engineering Team",
@@ -48,7 +59,7 @@
     {
       "siteId": "flux-supply",
       "id": "flux-supply-93650cf2a388",
-      "version": "v1.2",
+      "version": "v1.1",
       "title": "Search visibility for a fictional shop",
       "summary": "Kept this fictional storefront out of search results.",
       "authorName": "Engineering Team",
@@ -59,7 +70,7 @@
     {
       "siteId": "flux-supply",
       "id": "flux-supply-5d3133d0a7f5",
-      "version": "v1.1",
+      "version": "v1.0",
       "title": "Showcase animation fix",
       "summary": "Fixed the homepage showcase animation lifecycle.",
       "authorName": "Engineering Team",

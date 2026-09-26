@@ -1,0 +1,71 @@
+{
+  "siteId": "flux-supply",
+  "notes": [
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-400bf8a6a3c7",
+      "version": "v1.6",
+      "title": "Patch notes and release history",
+      "summary": "Added a dedicated website updates page, a site-specific release feed, and five verified historical updates with links to their GitHub commits.",
+      "authorName": "Engineering Team",
+      "commitHash": "400bf8a6a3c777a6d9995fcb19ad22d40a66fc23",
+      "tags": "Patch Notes, UI",
+      "releasedAt": "2026-09-26T17:20:54Z"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-63385f6730a2",
+      "version": "v1.5",
+      "title": "Anonymous viewer analytics",
+      "summary": "Added anonymous page view reporting to Payloader Operations for this sample.",
+      "authorName": "Engineering Team",
+      "commitHash": "63385f6730a2eef1812a1c3974f67c3bc64d224c",
+      "tags": "Analytics, Privacy",
+      "releasedAt": "2026-09-25T21:03:05-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-4f461880b5b4",
+      "version": "v1.4",
+      "title": "Secure portfolio embedding",
+      "summary": "Allowed the main Payloader Tech portfolio to embed this storefront sample securely.",
+      "authorName": "Engineering Team",
+      "commitHash": "4f461880b5b4f012d3a881ec19fa32e41115a689",
+      "tags": "Showcase, Security",
+      "releasedAt": "2026-09-12T17:45:41-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-b20aac35bcab",
+      "version": "v1.3",
+      "title": "Reusable sample integration",
+      "summary": "Made the main site sample integration reusable for future showcases.",
+      "authorName": "Engineering Team",
+      "commitHash": "b20aac35bcab10c19385b65732fb81aa6406ad11",
+      "tags": "Showcase, Tooling",
+      "releasedAt": "2026-09-12T17:19:03-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-93650cf2a388",
+      "version": "v1.2",
+      "title": "Search visibility for a fictional shop",
+      "summary": "Kept this fictional storefront out of search results.",
+      "authorName": "Engineering Team",
+      "commitHash": "93650cf2a388d7f2006177bcc37ddacf0c2d694c",
+      "tags": "Search, Privacy",
+      "releasedAt": "2026-09-12T13:26:43-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-5d3133d0a7f5",
+      "version": "v1.1",
+      "title": "Showcase animation fix",
+      "summary": "Fixed the homepage showcase animation lifecycle.",
+      "authorName": "Engineering Team",
+      "commitHash": "5d3133d0a7f5ba870fa2174876e4831b33857b6f",
+      "tags": "Motion, Fixes",
+      "releasedAt": "2026-09-12T12:57:25-05:00"
+    }
+  ]
+}

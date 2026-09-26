@@ -3,8 +3,30 @@
   "notes": [
     {
       "siteId": "flux-supply",
+      "id": "flux-supply-be6fee2a1fcb",
+      "title": "Manage-only history pull request merge",
+      "summary": "Merged PR #4, keeping the site's patch-note display in Payloader Manage.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "be6fee2a1fcb9d497f1ea8ea73adf21d5d102e20",
+      "tags": "Patch Notes, Management, Release",
+      "version": "v3.10",
+      "releasedAt": "2026-09-26T17:23:41-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-4cb529259c36",
+      "title": "Manage-only release history record",
+      "summary": "Recorded the change that moved this site's patch-note display into Payloader Manage.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "4cb529259c362fcfe24d94fce86732fc79443e5e",
+      "tags": "Patch Notes, Management",
+      "version": "v3.9",
+      "releasedAt": "2026-09-26T17:20:31-05:00"
+    },
+    {
+      "siteId": "flux-supply",
       "id": "flux-supply-227230467cdc",
-      "version": "v3.4",
+      "version": "v3.8",
       "title": "Release History moved to Payloader Manage",
       "summary": "Removed the public patch-notes page and visible links. The site-specific JSON feed remains available to Payloader Manage.",
       "details": "Removed the public release history page and its navigation and footer links. Kept the site-specific JSON feed for Payloader Manage.",
@@ -15,8 +37,30 @@
     },
     {
       "siteId": "flux-supply",
+      "id": "flux-supply-adb909fda6d6",
+      "title": "Chronological versioning pull request merge",
+      "summary": "Merged PR #3 with the site's chronological release version corrections.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "adb909fda6d64b302e0d925ab94da0a1d7aea562",
+      "tags": "Patch Notes, Versioning, Release",
+      "version": "v3.7",
+      "releasedAt": "2026-09-26T16:14:50-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-4b62c09752b2",
+      "title": "Patch-note version correction record",
+      "summary": "Documented the chronological version correction in the site's patch notes.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "4b62c09752b2028e86157ebd4777ce2c47252ef6",
+      "tags": "Patch Notes, Versioning",
+      "version": "v3.6",
+      "releasedAt": "2026-09-26T15:56:45-05:00"
+    },
+    {
+      "siteId": "flux-supply",
       "id": "flux-supply-236887ad06a9",
-      "version": "v3.3",
+      "version": "v3.5",
       "title": "Chronological Patch Note Versioning",
       "summary": "Reassigned historical versions from v1.0 in commit-date order, used 0.1 increments for small and medium updates, reserved major jumps for qualifying releases, and documented the rule for future changes.",
       "authorName": "Engineering and Development Team",
@@ -26,14 +70,36 @@
     },
     {
       "siteId": "flux-supply",
+      "id": "flux-supply-df9399ee9f98",
+      "title": "Patch-notes feature pull request merge",
+      "summary": "Merged PR #2, adding the site's patch-notes feed and release history.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "df9399ee9f985e032cfc4612a596f0897accb3a1",
+      "tags": "Patch Notes, Integration, Release",
+      "version": "v3.4",
+      "releasedAt": "2026-09-26T12:29:32-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-ab024f2d0ba4",
+      "title": "Patch-notes feature release record",
+      "summary": "Recorded the patch-notes feature release in the site's history feed.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "ab024f2d0ba4a986130bdbc8497ecad7502bbf34",
+      "tags": "Patch Notes, Management",
+      "version": "v3.3",
+      "releasedAt": "2026-09-26T12:22:05-05:00"
+    },
+    {
+      "siteId": "flux-supply",
       "id": "flux-supply-400bf8a6a3c7",
       "version": "v3.2",
       "title": "Patch notes and release history",
       "summary": "Added a dedicated website updates page, a site-specific release feed, and five verified historical updates with links to their GitHub commits.",
-      "authorName": "Engineering Team",
+      "authorName": "Engineering and Development Team",
       "commitHash": "400bf8a6a3c777a6d9995fcb19ad22d40a66fc23",
       "tags": "Patch Notes, UI",
-      "releasedAt": "2026-09-26T17:20:54Z"
+      "releasedAt": "2026-09-26T12:20:54-05:00"
     },
     {
       "siteId": "flux-supply",
@@ -41,7 +107,7 @@
       "version": "v3.1",
       "title": "Anonymous viewer analytics",
       "summary": "Added anonymous page view reporting to Payloader Operations for this sample.",
-      "authorName": "Engineering Team",
+      "authorName": "Engineering and Development Team",
       "commitHash": "63385f6730a2eef1812a1c3974f67c3bc64d224c",
       "tags": "Analytics, Privacy",
       "releasedAt": "2026-09-25T21:03:05-05:00"
@@ -52,7 +118,7 @@
       "version": "v3.0",
       "title": "Secure portfolio embedding",
       "summary": "Allowed the main Payloader Tech portfolio to embed this storefront sample securely.",
-      "authorName": "Engineering Team",
+      "authorName": "Engineering and Development Team",
       "commitHash": "4f461880b5b4f012d3a881ec19fa32e41115a689",
       "tags": "Showcase, Security",
       "releasedAt": "2026-09-12T17:45:41-05:00"
@@ -63,7 +129,7 @@
       "version": "v2.0",
       "title": "Reusable sample integration",
       "summary": "Made the main site sample integration reusable for future showcases.",
-      "authorName": "Engineering Team",
+      "authorName": "Engineering and Development Team",
       "commitHash": "b20aac35bcab10c19385b65732fb81aa6406ad11",
       "tags": "Showcase, Tooling",
       "releasedAt": "2026-09-12T17:19:03-05:00"
@@ -71,10 +137,10 @@
     {
       "siteId": "flux-supply",
       "id": "flux-supply-93650cf2a388",
-      "version": "v1.1",
+      "version": "v1.5",
       "title": "Search visibility for a fictional shop",
       "summary": "Kept this fictional storefront out of search results.",
-      "authorName": "Engineering Team",
+      "authorName": "Engineering and Development Team",
       "commitHash": "93650cf2a388d7f2006177bcc37ddacf0c2d694c",
       "tags": "Search, Privacy",
       "releasedAt": "2026-09-12T13:26:43-05:00"
@@ -82,13 +148,57 @@
     {
       "siteId": "flux-supply",
       "id": "flux-supply-5d3133d0a7f5",
-      "version": "v1.0",
+      "version": "v1.4",
       "title": "Showcase animation fix",
       "summary": "Fixed the homepage showcase animation lifecycle.",
-      "authorName": "Engineering Team",
+      "authorName": "Engineering and Development Team",
       "commitHash": "5d3133d0a7f5ba870fa2174876e4831b33857b6f",
       "tags": "Motion, Fixes",
       "releasedAt": "2026-09-12T12:57:25-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-aa932df02c29",
+      "title": "Desktop-only sample simulators",
+      "summary": "Configured the showcase integration to expose sample simulators on desktop only.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "aa932df02c291e726ac3d50c81f556451efe7b50",
+      "tags": "Samples, Showcase, Compatibility",
+      "version": "v1.3",
+      "releasedAt": "2026-09-12T10:12:49-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-4c84891a5704",
+      "title": "Mobile showcase improvements",
+      "summary": "Adjusted the main-site sample showcase integration for improved mobile presentation.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "4c84891a5704c6149d056dba17a5e837d3fc1254",
+      "tags": "Samples, Mobile, UI",
+      "version": "v1.2",
+      "releasedAt": "2026-09-12T09:44:57-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-525ba073b862",
+      "title": "Deployment QA and showcase integration",
+      "summary": "Added a Playwright deployment configuration and a script to register the storefront in the main site's sample showcase.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "525ba073b862a8b08339553d02675afb2891c7de",
+      "tags": "Samples, Integration, QA",
+      "version": "v1.1",
+      "releasedAt": "2026-09-12T01:04:16-05:00"
+    },
+    {
+      "siteId": "flux-supply",
+      "id": "flux-supply-e04a44e053d3",
+      "title": "Flux Supply storefront launch",
+      "summary": "Built a responsive ecommerce sample with product pages, cart interactions, product imagery, and Playwright tests.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "e04a44e053d3f881dbaef9731042dff109d90d4b",
+      "tags": "Website, Launch, Storefront",
+      "version": "v1.0",
+      "releasedAt": "2026-09-12T00:41:05-05:00"
     }
   ]
 }

@@ -3,6 +3,17 @@
   "notes": [
     {
       "siteId": "flux-supply",
+      "id": "flux-supply-400bf8a6a3c7",
+      "version": "v1.6",
+      "title": "Patch notes and release history",
+      "summary": "Added a dedicated website updates page, a site-specific release feed, and five verified historical updates with links to their GitHub commits.",
+      "authorName": "Engineering Team",
+      "commitHash": "400bf8a6a3c777a6d9995fcb19ad22d40a66fc23",
+      "tags": "Patch Notes, UI",
+      "releasedAt": "2026-09-26T17:20:54Z"
+    },
+    {
+      "siteId": "flux-supply",
       "id": "flux-supply-63385f6730a2",
       "version": "v1.5",
       "title": "Anonymous viewer analytics",

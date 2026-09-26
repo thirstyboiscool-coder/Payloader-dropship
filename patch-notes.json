@@ -3,6 +3,18 @@
   "notes": [
     {
       "siteId": "flux-supply",
+      "id": "flux-supply-227230467cdc",
+      "version": "v3.4",
+      "title": "Release History moved to Payloader Manage",
+      "summary": "Removed the public patch-notes page and visible links. The site-specific JSON feed remains available to Payloader Manage.",
+      "details": "Removed the public release history page and its navigation and footer links. Kept the site-specific JSON feed for Payloader Manage.",
+      "authorName": "Engineering and Development Team",
+      "commitHash": "227230467cdc7f8bbec34faed430297313f9bf1f",
+      "tags": "Patch Notes, Navigation, Management",
+      "releasedAt": "2026-09-26T17:07:29-05:00"
+    },
+    {
+      "siteId": "flux-supply",
       "id": "flux-supply-236887ad06a9",
       "version": "v3.3",
       "title": "Chronological Patch Note Versioning",
